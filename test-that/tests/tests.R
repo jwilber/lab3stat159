@@ -8,7 +8,7 @@ w <- letters[1:5]
 
 
 # load the source code of the functions to be tested
-source("functions/")
+source("~/Desktop/stat159/lab3stat159/test-that/functions/range-value.R")
 # context with one test that groups expectations
 context("Test for range value") 
 test_that("range works as expected", {
@@ -30,7 +30,6 @@ test_that("range works as expected for y", {
   expect_type(range_value(y), 'NA_real_')
 })
 
-
 test_that("range works as expected for z", {
   z <- c(TRUE, FALSE, TRUE)
   
@@ -48,7 +47,7 @@ test_that("range works as expected for w", {
 
 
 
-
+source("~/Desktop/stat159/lab3stat159/test-that/functions/missing-values.R")
 # -------------------------
 # Missing Values
 context("Test for missing values") 
